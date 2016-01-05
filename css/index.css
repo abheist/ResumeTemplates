@@ -197,6 +197,8 @@ a	{
 
 #projectDataRight	{
 	flex: 3;
+	font-size: 22px;
+	padding-right: 70px;
 }
 
 @media all and (max-width: 1000px)	{
