@@ -234,6 +234,9 @@ a	{
 	#project	{
 		font-size: 14px;
 	}
+	#projectDataRight	{
+		font-size: 14px;
+	}
 }
 
 #additionalExp	{
@@ -257,6 +260,19 @@ a	{
 	flex: 1;
 }	
 
+
+@media all and (max-width: 1000px)	{
+	.addExp	{
+		font-size: 24px;
+	}
+	.addExpDiv	{
+		margin-top: 24px;
+	}
+	#additionalSection	{
+		flex-direction: column;
+	}
+}
+
 @media all and (max-width: 500px)	{
 	.addExp	{
 		font-size: 14px;
@@ -264,8 +280,11 @@ a	{
 	.addExpDiv	{
 		margin-top: 24px;
 	}
-
+	#additionalSection	{
+		flex-direction: column;
+	}
 }
+
 
 
 #techSkills	{
