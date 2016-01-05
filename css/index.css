@@ -1,0 +1,366 @@
+*	{
+	padding: 0px;
+	margin: 0px;
+}
+
+body	{
+	background: #ececec;
+	color: black;
+	font-family: calibri;
+}
+
+a	{
+	text-decoration: none;
+	color: white;
+}
+
+#mainContainer	{
+	width: 90%;
+	margin: 0px auto;
+}
+
+#headerBack	{
+	background: rgb(54, 151, 156);
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#headerInfo	{
+	flex: 2;
+}
+
+#headerImg	{
+	flex: 1;
+	background: url(../images/hello.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#headerName	{
+	color: white;
+}
+
+.headerInfoData	{
+	color: white;
+}
+
+#headerInfoDiv1	{
+	padding-top: 200px;
+	padding-left: 200px;
+}
+
+@media all and (max-width: 1000px)	{
+	#headerBack	{
+		height: 400px;
+	}
+	#headerBack	{
+		flex-direction: column;
+	}
+	#headerInfo	{
+		flex: 1;
+		order: 2;
+	}
+
+	#headerImg	{
+		flex: 1;
+		order: 1;
+		background: url(../images/helloRound.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#headerInfoDiv1	{
+		padding-top: 0px;
+		padding-left: 0px;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 500px)	{
+	#mainContainer	{
+		width: 100%;
+	}
+	#headerBack	{
+		height: 300px;
+	}
+	#headerBack	{
+		flex-direction: column;
+	}
+	#headerInfo	{
+		flex: 1;
+		order: 2;
+	}
+
+	#headerName	{
+		font-size: 24px;
+		margin-top: 20px;
+	}
+
+	#headerImg	{
+		flex: 1;
+		order: 1;
+		background: url(../images/helloRound.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+#study	{
+	margin-top: 50px;
+	display: flex;
+}
+
+#studyHeading	{
+	flex: 2;
+	text-align: center;
+	color: rgb(54, 151, 156);
+	font-size: 30px;
+	line-height: 100px;
+}
+
+#studyData	{
+	flex: 3;
+}
+
+.studyData	{
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+@media	all and (max-width: 1000px)	{
+	#study	{
+		flex-direction: column;
+	}
+	#studyHeading	{
+		font-size: 30px;
+		line-height: 64px;
+		margin-bottom: 10px;
+	}
+	#studyData	{
+		text-indent: 100px;
+	}
+
+}
+
+@media all and (max-width: 500px)	{
+	#study	{
+
+	}
+	#studyHeading	{
+		font-size: 20px;
+		line-height: 24px;
+	}
+	#studyData	{
+		text-indent: 10px;
+	}
+	.studyData	{
+		font-size: 14px;
+	}
+}
+
+#project	{
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+#projectAll	{
+
+}
+
+#projectHeading	{
+	text-align: center;
+	color: rgb(54, 151, 156);
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+#project1	{
+	display: flex;
+	margin-top: 10px;
+}
+
+#projectHeadingLeft	{
+	flex: 2;
+	text-indent: 50px;
+	list-style-position: inside;
+}
+
+#projectDataRight	{
+	flex: 3;
+}
+
+@media all and (max-width: 1000px)	{
+	#project	{
+		font-size: 20px;
+	}
+	#projectHeading	{
+		font-size: 20px;
+		line-height: 64px;
+		margin-bottom: 20px;
+	}
+
+	#project1	{
+		flex-direction: column;
+	}
+
+	#projectHeadingLeft	{
+		flex: 1;
+		text-indent: 0px;
+	}
+}
+
+@media all and (max-width: 500px)	{
+	#projectHeading	{
+		font-size: 20px;
+		line-height: 24px;
+	}
+	#studyData	{
+		text-indent: 10px;
+	}
+	#project	{
+		font-size: 14px;
+	}
+}
+
+#additionalExp	{
+	margin-top: 50px;
+}
+
+.addExp	{
+	font-size: 24px;
+}
+
+@media all and (max-width: 500px)	{
+	.addExp	{
+		font-size: 14px;
+	}
+	.addExpDiv	{
+		margin-top: 24px;
+	}
+
+}
+
+
+#techSkills	{
+	margin-top: 50px;
+}
+
+#techSkillList	{
+	width: 100%;
+	display: flex;
+}
+
+.techListColumn	{
+	flex: 1;
+}
+
+.techListItem	{
+	display: flex;
+	margin-top: 5px;
+}
+
+.techListItemName	{
+	flex: 1;
+	font-size: 24px;
+}
+
+.techListItemScale	{
+	flex: 1;
+}
+
+.techListItemScaleDiff	{
+	height: 27px;
+	background: rgb(54,151,156);
+}
+
+@media all and (max-width: 500px)	{
+	#projectHeading	{
+		margin-top: 50px;
+	}
+	#techSkillList	{
+		flex-direction: column;
+	}
+	.techListItemName	{
+		font-size: 14px;
+	}
+	.techListItemScaleDiff	{
+		height: 15px;
+	}
+}
+
+
+
+.scale1	{
+	width: 10%;
+}
+
+.scale2	{
+	width: 20%;
+}
+
+.scale3	{
+	width: 30%;
+}
+
+.scale4	{
+	width: 40%;
+}
+
+.scale5	{
+	width: 50%;
+}
+
+.scale6	{
+	width: 60%;
+}
+
+.scale7	{
+	width: 70%;
+}
+
+.scale8	{
+	width: 80%;
+}
+
+.scale9	{
+	width: 90%;
+}
+
+.scale10	{
+	width: 100%;
+}
+
+#footer	{
+	margin-top: 70px;
+	background: rgb(54,151,156);
+	color: white;
+	font-size: 24px;
+}
+
+#footerIn	{
+	display: flex;
+	align-items: center;
+	height: 70px;
+}
+
+.footerItem	{
+	flex: 1;
+	text-align: center;
+}
+
+@media all and (max-width: 500px)	{
+	#footer	{
+
+	}
+
+	#footerIn	{
+		flex-direction: column;
+		height: 100px;
+		font-size: 14px;
+	}
+	.footerItem	{
+		line-height: 33.33px;
+	}
+}
